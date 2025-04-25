@@ -1,0 +1,15 @@
+spring.application.name: api
+
+spring.datasource:
+  url: jdbc:postgresql://localhost:5432/image_browser_db
+  username: root
+  password: root
+  driver-class-name: org.postgresql.Driver
+
+spring.jpa:
+  hibernate.ddl-auto: update
+  properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  show-sql: true
+
+jwt.secret-key: qwertyuiopasdfghjklzxcvbnmqwerty
+jwt.token-expiration-hours: 1
